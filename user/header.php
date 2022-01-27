@@ -13,47 +13,45 @@ if (empty($_SESSION['nama_user'])) {
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <title>Admin Kendaraan</title>
     <!-- Favicon-->
-    <link rel="icon" href="../image/brand.ico" type="image/x-icon">
-
+    <link rel="icon" href="../../image/brand.ico" type="../image/x-icon">
+    <script type="text/javascript" src="../js/ckeditor/ckeditor.js"></script>
     <!-- Google Fonts -->
-    <link rel="stylesheet" type="text/css" href="../iconfont/material-icons.css">
+    <link href="../../iconfont/material-icons.css" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap Core Css -->
-    <link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/inputgambar.css">
 
+  <link href="../plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
     <!-- Waves Effect Css -->
-    <link href="plugins/node-waves/waves.css" rel="stylesheet" />
-
+    <link href="../plugins/node-waves/waves.css" rel="stylesheet" />
     <!-- Animation Css -->
-    <link href="plugins/animate-css/animate.css" rel="stylesheet" />
+    <link href="../plugins/animate-css/animate.css" rel="stylesheet" />
 
     <!-- Morris Chart Css-->
-    <link href="plugins/morrisjs/morris.css" rel="stylesheet" />
+    <link href="../plugins/morrisjs/morris.css" rel="stylesheet" />
+     <link href="../plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
 
     <!-- Custom Css -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
-    <link href="css/themes/all-themes.css" rel="stylesheet" />
+    <link href="../css/themes/all-themes.css" rel="stylesheet" />
 </head>
 
 <body class="theme-red">
     <!-- Page Loader -->
- 
     <!-- #END# Page Loader -->
     <!-- Overlay For Sidebars -->
     <div class="overlay"></div>
     <!-- #END# Overlay For Sidebars -->
     <!-- Search Bar -->
- 
-    <!-- #END# Search Bar -->
-    <!-- Top Bar -->
     <nav class="navbar">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand" href="index.html">Admin Kendaraan</a>
+                <a class="navbar-brand" href="../index.php">Admin Kendaraan</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -65,8 +63,8 @@ if (empty($_SESSION['nama_user'])) {
                             <li class="header"><?php echo $_SESSION['nama_user']?></li>
                             <li class="body">
                                 <ul class="menu">
-                                    <li>
-                                        <a href="logout.php">
+                                     <li>
+                                        <a href="../logout.php">
                                             <div class="icon-circle bg-purple">
                                                 <i class="material-icons">exit_to_app</i>
                                             </div>
@@ -95,7 +93,7 @@ if (empty($_SESSION['nama_user'])) {
             <!-- User Info -->
             <div class="user-info">
                 <div class="image">
-                    <img src="../image/brand.png"  height="64" alt="User" />
+                    <img src="../../image/brand.png"  height="64" alt="User" />
                 </div>
             </div>
             <!-- #User Info -->
@@ -104,7 +102,7 @@ if (empty($_SESSION['nama_user'])) {
                 <ul class="list">
                     <li class="header">MAIN NAVIGATION</li>
                     <li class="active">
-                        <a href="index.php">
+                        <a href="../index.php">
                             <i class="material-icons">home</i>
                             <span>Home</span>
                         </a>
